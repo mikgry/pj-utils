@@ -1,5 +1,6 @@
 (function()
 {
+  widget(window.jQuery);
 
   function widget(jQuery)
   {
