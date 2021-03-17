@@ -218,7 +218,7 @@
 
     function prepareFooter()
     {
-      return '<div class="'+getBackgroundClass()+'"><div class="lubimyczytacpl-footer-container"><div class="lubimyczytacpl-logo"></div><div><a href="http://lubimyczytac.pl/'+linkSuffix+'" class="lubimyczytacpl lubimyczytacpl-website" title="lubimyczytać.pl - Twoja Internetowa Biblioteczka"><span class="lubimyczytacpl-accent">lubimy</span>czytać.pl</a></div><div class="lubimyczytacpl-clr"></div></div></div>';
+      return '<div class="'+getBackgroundClass()+'"><div class="lubimyczytacpl-footer-container d-flex justify-content-center"><div class="lubimyczytacpl-logo"></div><div><a href="http://lubimyczytac.pl/'+linkSuffix+'" class="lubimyczytacpl lubimyczytacpl-website" title="lubimyczytać.pl - Twoja Internetowa Biblioteczka"><span class="lubimyczytacpl-accent">lubimy</span>czytać.pl</a></div><div class="lubimyczytacpl-clr"></div></div></div>';
     }
   }
 
