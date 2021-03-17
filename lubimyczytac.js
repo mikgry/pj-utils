@@ -99,8 +99,6 @@
           stylesheetType = 'bright';
       }
 
-      jQuery('head').append('<link href="'+stylesheetUrl+stylesheetType+'.css?2015061101" rel="stylesheet" />');
-
       if (showBorder == '1')
       {
         jQuery('#lubimyczytacpl-widget-container').addClass('lubimyczytacpl-border');
@@ -171,12 +169,12 @@
 
       if (avatar)
       {
-        html += '<div class="lubimyczytacpl-avatar"><a href="'+profileUrl+userId+linkSuffix+'" title="Profil czytelnika na lubimyczytać.pl" class="lubimyczytacpl"><img src="'+avatar+'" class="lubimyczytacpl" /></a></div>';
+        html += '<div class="lubimyczytacpl-avatar mb-2 mr-2"><a href="'+profileUrl+userId+linkSuffix+'" title="Profil czytelnika na lubimyczytać.pl" class="lubimyczytacpl"><img src="'+avatar+'" class="lubimyczytacpl" /></a></div>';
       }
 
       if (username)
       {
-        html += '<div class="lubimyczytacpl-username"><a href="'+profileUrl+userId+linkSuffix+'" title="Profil czytelnika na lubimyczytać.pl" class="lubimyczytacpl">'+username+'<br /><span class="lubimyczytacpl-website">na </span><span class="lubimyczytacpl-website lubimyczytacpl-accent">lubimy</span><span class="lubimyczytacpl-website">czytać.pl</span></a></div>';
+        html += '<div class="lubimyczytacpl-username"><a href="'+profileUrl+userId+linkSuffix+'" title="Profil czytelnika na lubimyczytać.pl" class="lubimyczytacpl">Panna Jagiellonka<br /><span class="lubimyczytacpl-website">na </span><span class="lubimyczytacpl-website lubimyczytacpl-accent">lubimy</span><span class="lubimyczytacpl-website">czytać.pl</span></a></div>';
       }
 
       html += '<div class="lubimyczytacpl-clr"></div></div>';
@@ -210,7 +208,7 @@
 
       jQuery.each(books, function(num, book)
       {
-        html += '<li class="lubimyczytacpl"><a href="'+bookUrl+book.url+linkSuffix+'" class="lubimyczytacpl"><img class="lubimyczytacpl-cover" src="'+book.cover+'" alt="'+book.title+'" title="'+book.title+'" /></a></li>';
+        html += '<li class="lubimyczytacpl"><a href="'+bookUrl+book.url+linkSuffix+'" class="lubimyczytacpl"><img class="lubimyczytacpl-cover mb-2" src="'+book.cover+'" alt="'+book.title+'" title="'+book.title+'" /></a></li>';
       });
 
       html += '</ul>';
