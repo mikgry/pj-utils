@@ -202,6 +202,7 @@
       return html;
     }
 
+    
     function prepareBooks(books)
     {
       var html     = '<ul class="lubimyczytacpl">';
