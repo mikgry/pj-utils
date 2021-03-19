@@ -8,8 +8,7 @@
 
       var linkSuffix    = '?utm_source=widget_wklejki&utm_medium=widget_wklejki&utm_campaign=wklejki+na+bloga';
     var stylesheetUrl = 'https://s-konto.lubimyczytac.pl/skins/lc/css/widget/lubimyczytacpl-widget-';
-    var 
-    = 'https://konto.lubimyczytac.pl/profil/';
+    var profileUrl = 'https://konto.lubimyczytac.pl/profil/';
     var bookUrl       = 'https://konto.lubimyczytac.pl/ksiazka/';
 
     var userId       = '1722533';
