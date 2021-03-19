@@ -8,7 +8,8 @@
 
       var linkSuffix    = '?utm_source=widget_wklejki&utm_medium=widget_wklejki&utm_campaign=wklejki+na+bloga';
     var stylesheetUrl = 'https://s-konto.lubimyczytac.pl/skins/lc/css/widget/lubimyczytacpl-widget-';
-    var profileUrl    = 'https://konto.lubimyczytac.pl/profil/';
+    var 
+    = 'https://konto.lubimyczytac.pl/profil/';
     var bookUrl       = 'https://konto.lubimyczytac.pl/ksiazka/';
 
     var userId       = '1722533';
@@ -195,7 +196,7 @@
       {
         jQuery.each(shelfs, function(shelfType, shelf)
         {
-          html += '<div class="lubimyczytacpl-box '+getBackgroundClass()+'"><p class="lubimyczytacpl-shelf"><a href="'+profileUrl+userId+'/'+usernameseo+'/polka/'+shelf.url+linkSuffix+'" target="_blank" class="lubimyczytacpl">'+shelf.name+': <span class="lubimyczytacpl-accent">'+shelf.amount+'</span></a></p>'+prepareBooks(shelf.books)+'</div>';
+          html += '<div class="lubimyczytacpl-box '+getBackgroundClass()+'"><p class="lubimyczytacpl-shelf"><a href="'+profileUrl+userId+'/'+usernameseo+'/biblioteczka/lista?shelfs='+shelf.id+'" target="_blank" class="lubimyczytacpl">'+shelf.name+': <span class="lubimyczytacpl-accent">'+shelf.amount+'</span></a></p>'+prepareBooks(shelf.books)+'</div>';
         });
       }
 
