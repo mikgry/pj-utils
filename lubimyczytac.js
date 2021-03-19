@@ -209,7 +209,7 @@
 
       jQuery.each(books, function(num, book)
       {
-        html += '<li class="lubimyczytacpl"><a href="'+bookUrl+book.url+linkSuffix+'" class="lubimyczytacpl"><img class="lubimyczytacpl-cover mb-2" src="'+book.cover+'" alt="'+book.title+'" title="'+book.title+'" /></a></li>';
+        html += '<li class="lubimyczytacpl"><a href="'+book.url+linkSuffix+'" class="lubimyczytacpl"><img class="lubimyczytacpl-cover mb-2" src="'+book.cover+'" alt="'+book.title+'" title="'+book.title+'" /></a></li>';
       });
 
       html += '</ul>';
