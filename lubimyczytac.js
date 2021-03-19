@@ -169,12 +169,12 @@
 
       if (avatar)
       {
-        html += '<div class="lubimyczytacpl-avatar mb-2 mr-2"><a href="'+profileUrl+userId+linkSuffix+'" title="Profil czytelnika na lubimyczytać.pl" class="lubimyczytacpl"><img src="'+avatar+'" class="lubimyczytacpl" /></a></div>';
+        html += '<div class="lubimyczytacpl-avatar mb-2 mr-2"><a href="'+profileUrl+userId+linkSuffix+'" target="_blank" title="Profil czytelnika na lubimyczytać.pl" class="lubimyczytacpl"><img src="'+avatar+'" class="lubimyczytacpl" /></a></div>';
       }
 
       if (username)
       {
-        html += '<div class="lubimyczytacpl-username"><a href="'+profileUrl+userId+linkSuffix+'" title="Profil czytelnika na lubimyczytać.pl" class="lubimyczytacpl">Panna Jagiellonka<br /><span class="lubimyczytacpl-website">na </span><span class="lubimyczytacpl-website lubimyczytacpl-accent">lubimy</span><span class="lubimyczytacpl-website">czytać.pl</span></a></div>';
+        html += '<div class="lubimyczytacpl-username"><a href="'+profileUrl+userId+linkSuffix+'" target="_blank" title="Profil czytelnika na lubimyczytać.pl" class="lubimyczytacpl">Panna Jagiellonka<br /><span class="lubimyczytacpl-website">na </span><span class="lubimyczytacpl-website lubimyczytacpl-accent">lubimy</span><span class="lubimyczytacpl-website">czytać.pl</span></a></div>';
       }
 
       html += '<div class="lubimyczytacpl-clr"></div></div>';
@@ -184,7 +184,7 @@
 
     function prepareLibrary(username, usernameseo, libraryAmount)
     {
-      return '<div class="lubimyczytacpl-box '+getBackgroundClass()+'"><div class="lubimyczytacpl-library"></div><p class="lubimyczytacpl-library"><a href="'+profileUrl+userId+'/'+usernameseo+'/biblioteczka/lista'+linkSuffix+'" title="Książki w biblioteczce czytelnika" class="lubimyczytacpl">Biblioteczka: <span class="lubimyczytacpl-accent">'+libraryAmount+'</span></a></p><div class="lubimyczytacpl-clr"></div></div>';
+      return '<div class="lubimyczytacpl-box '+getBackgroundClass()+'"><div class="lubimyczytacpl-library"></div><p class="lubimyczytacpl-library"><a href="'+profileUrl+userId+'/'+usernameseo+'/biblioteczka/lista'+linkSuffix+'" target="_blank" title="Książki w biblioteczce czytelnika" class="lubimyczytacpl">Biblioteczka: <span class="lubimyczytacpl-accent">'+libraryAmount+'</span></a></p><div class="lubimyczytacpl-clr"></div></div>';
     }
 
     function prepareShelf(username, usernameseo, shelfs)
@@ -195,7 +195,7 @@
       {
         jQuery.each(shelfs, function(shelfType, shelf)
         {
-          html += '<div class="lubimyczytacpl-box '+getBackgroundClass()+'"><p class="lubimyczytacpl-shelf"><a href="'+profileUrl+userId+'/'+usernameseo+'/polka/'+shelf.url+linkSuffix+'" class="lubimyczytacpl">'+shelf.name+': <span class="lubimyczytacpl-accent">'+shelf.amount+'</span></a></p>'+prepareBooks(shelf.books)+'</div>';
+          html += '<div class="lubimyczytacpl-box '+getBackgroundClass()+'"><p class="lubimyczytacpl-shelf"><a href="'+profileUrl+userId+'/'+usernameseo+'/polka/'+shelf.url+linkSuffix+'" target="_blank" class="lubimyczytacpl">'+shelf.name+': <span class="lubimyczytacpl-accent">'+shelf.amount+'</span></a></p>'+prepareBooks(shelf.books)+'</div>';
         });
       }
 
@@ -209,7 +209,7 @@
 
       jQuery.each(books, function(num, book)
       {
-        html += '<li class="lubimyczytacpl"><a href="'+book.url+linkSuffix+'" class="lubimyczytacpl"><img class="lubimyczytacpl-cover mb-2" src="'+book.cover+'" alt="'+book.title+'" title="'+book.title+'" /></a></li>';
+        html += '<li class="lubimyczytacpl"><a href="'+book.url+linkSuffix+'" target="_blank" class="lubimyczytacpl"><img class="lubimyczytacpl-cover mb-2" src="'+book.cover+'" alt="'+book.title+'" title="'+book.title+'" /></a></li>';
       });
 
       html += '</ul>';
@@ -219,7 +219,7 @@
 
     function prepareFooter()
     {
-      return '<div class="'+getBackgroundClass()+'"><div class="lubimyczytacpl-footer-container d-flex justify-content-center"><div class="lubimyczytacpl-logo"></div><div><a href="http://lubimyczytac.pl/'+linkSuffix+'" class="lubimyczytacpl lubimyczytacpl-website" title="lubimyczytać.pl - Twoja Internetowa Biblioteczka"><span class="lubimyczytacpl-accent">lubimy</span>czytać.pl</a></div><div class="lubimyczytacpl-clr"></div></div></div>';
+      return '<div class="'+getBackgroundClass()+'"><div class="lubimyczytacpl-footer-container d-flex justify-content-center"><div class="lubimyczytacpl-logo"></div><div><a href="http://lubimyczytac.pl/'+linkSuffix+'" target="_blank" class="lubimyczytacpl lubimyczytacpl-website" title="lubimyczytać.pl - Twoja Internetowa Biblioteczka"><span class="lubimyczytacpl-accent">lubimy</span>czytać.pl</a></div><div class="lubimyczytacpl-clr"></div></div></div>';
     }
   }
 
